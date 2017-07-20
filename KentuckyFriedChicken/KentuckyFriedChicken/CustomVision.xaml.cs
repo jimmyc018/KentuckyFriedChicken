@@ -85,7 +85,7 @@ namespace KentuckyFriedChicken
 
 					double max = responseModel.Predictions.Max(m => m.Probability);
 
-					TagLabel.Text = (max >= 0.5) ? "KFC" : "Not KFC";
+					TagLabel.Text = (max >= 0.5) ? "FastFood" : "Not FastFood";
 
 				}
 
