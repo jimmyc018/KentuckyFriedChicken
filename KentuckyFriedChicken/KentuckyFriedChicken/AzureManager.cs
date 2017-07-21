@@ -15,7 +15,7 @@ namespace KentuckyFriedChicken
 
         private AzureManager()
         {
-            this.client = new MobileServiceClient("https://myfastfoodapp.azurewebsites.net/");
+            client = new MobileServiceClient("https://myfastfoodapp.azurewebsites.net/");
         }
 
         public MobileServiceClient AzureClient
