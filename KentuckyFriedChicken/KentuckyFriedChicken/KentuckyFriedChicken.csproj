@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AzureManager.cs" />
     <Compile Include="AzureTable.xaml.cs">
       <DependentUpon>AzureTable.xaml</DependentUpon>
     </Compile>
