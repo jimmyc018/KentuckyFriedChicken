@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using KentuckyFriedChicken.DataModels;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,14 @@ namespace KentuckyFriedChicken
         private static AzureManager instance;
         private MobileServiceClient client;
 
+
+        private IMobileServiceTable<NotFastFoodModel> notFastFoodTable;
+
+
         private AzureManager()
         {
             client = new MobileServiceClient("https://myfastfoodapp.azurewebsites.net/");
+            this.notFastFoodTable = this.client.GetTable<NotFastFoodModel>();
         }
 
         public MobileServiceClient AzureClient
@@ -34,6 +40,10 @@ namespace KentuckyFriedChicken
 
                 return instance;
             }
+        }
+        public async Task<List<NotFastFoodModel>> GetHotDogInformation()
+        {
+            return await this.notFastFoodTable.ToListAsync();
         }
     }
 }
