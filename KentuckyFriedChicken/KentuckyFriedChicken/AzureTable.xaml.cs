@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using KentuckyFriedChicken.DataModels;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,11 @@ namespace KentuckyFriedChicken
 		{
 			InitializeComponent();
 		}
-	}
+        async void Handle_ClickedAsync(object sender, System.EventArgs e)
+        {
+            List<NotFastFoodModel> notHotDogInformation = await AzureManager.AzureManagerInstance.GetFastFoodInformation();
+
+            FastFoodList.ItemsSource = notHotDogInformation;
+        }
+    }
 }

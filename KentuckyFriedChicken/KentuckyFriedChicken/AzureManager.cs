@@ -41,7 +41,7 @@ namespace KentuckyFriedChicken
                 return instance;
             }
         }
-        public async Task<List<NotFastFoodModel>> GetHotDogInformation()
+        public async Task<List<NotFastFoodModel>> GetFastFoodInformation()
         {
             return await this.notFastFoodTable.ToListAsync();
         }
