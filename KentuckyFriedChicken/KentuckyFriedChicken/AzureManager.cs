@@ -45,9 +45,6 @@ namespace KentuckyFriedChicken
         {
             return await this.notFastFoodTable.ToListAsync();
         }
-        public async Task PostFastFoodInformation(NotFastFoodModel notFastFoodModel)
-        {
-            await this.notFastFoodTable.InsertAsync(notFastFoodModel);
-        }
+
     }
 }
