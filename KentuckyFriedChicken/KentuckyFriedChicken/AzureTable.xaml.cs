@@ -20,11 +20,6 @@ namespace KentuckyFriedChicken
 		{
 			InitializeComponent();
 		}
-        async void Handle_ClickedAsync(object sender, System.EventArgs e)
-        {
-            List<NotFastFoodModel> notHotDogInformation = await AzureManager.AzureManagerInstance.GetFastFoodInformation();
 
-            FastFoodList.ItemsSource = notHotDogInformation;
-        }
     }
 }
