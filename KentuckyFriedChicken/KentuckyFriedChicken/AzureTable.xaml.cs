@@ -11,7 +11,6 @@ using Xamarin.Forms.Xaml;
 
 namespace KentuckyFriedChicken
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AzureTable : ContentPage
     
 	{
