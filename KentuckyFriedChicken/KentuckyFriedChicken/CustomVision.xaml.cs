@@ -64,7 +64,7 @@ namespace KentuckyFriedChicken
 
 			client.DefaultRequestHeaders.Add("Prediction-Key", "13e5167753114b2ba2e67c8ce2ceee3c");
 
-			string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/310d5c7e-8da1-4dd7-a9e6-2bde9561fa93/image?iterationId=9d133bf8-0953-4bcc-bfc3-655df614de14";
+			string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/310d5c7e-8da1-4dd7-a9e6-2bde9561fa93/image?iterationId=844d78c5-874d-4bf7-9438-ac467d88fe02";
 
 			HttpResponseMessage response;
 
@@ -85,7 +85,7 @@ namespace KentuckyFriedChicken
 
 					double max = responseModel.Predictions.Max(m => m.Probability);
 
-					TagLabel.Text = (max >= 0.5) ? "KFC" : "Not KFC";
+					TagLabel.Text = (max >= 0.5) ? "FastFood" : "Not FastFood";
 
 				}
 
