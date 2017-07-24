@@ -20,7 +20,7 @@ namespace KentuckyFriedChicken
 
         private AzureManager()
         {
-            client = new MobileServiceClient("http://myfastfoodapp.azurewebsites.net");
+            client = new MobileServiceClient("https://myfastfoodapp.azurewebsites.net/");
             this.notFastFoodTable = this.client.GetTable<NotFastFoodModel>();
         }
 
