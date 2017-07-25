@@ -6,4 +6,5 @@
     x:Class="KentuckyFriedChicken.MainPage">
 	<local:AzureTable />
 	<local:CustomVision />
+    <local:CatInformation />
 </TabbedPage>
