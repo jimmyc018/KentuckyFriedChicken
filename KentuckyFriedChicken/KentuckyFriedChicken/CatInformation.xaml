@@ -1,6 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KentuckyFriedChicken.CatInformation" Title="Cat Information">
-    <ContentPage.Content>
-        <Label Text="Cat Information Navigation Page Tab" VerticalOptions="Center" HorizontalOptions="Center" />
-    </ContentPage.Content>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       x:Class="KentuckyFriedChicken.CatInformation" Title="Cat Information">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Chicken Nugget" />
+        <Image Source= "images.jpg" />
+        <Label Text="'waterfront.jpg' is referenced in Xaml" />
+    </StackLayout>
 </ContentPage>

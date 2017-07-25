@@ -15,6 +15,7 @@ namespace KentuckyFriedChicken
         public CatInformation()
         {
             InitializeComponent();
+            
         }
     }
 }

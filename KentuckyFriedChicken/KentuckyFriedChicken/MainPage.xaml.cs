@@ -12,6 +12,7 @@ namespace KentuckyFriedChicken
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+            
+        }
 	}
 }
