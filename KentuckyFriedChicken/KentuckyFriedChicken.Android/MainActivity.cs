@@ -27,6 +27,7 @@ namespace KentuckyFriedChicken.Droid
 		{
 			PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 		}
+
 	}
 }
 

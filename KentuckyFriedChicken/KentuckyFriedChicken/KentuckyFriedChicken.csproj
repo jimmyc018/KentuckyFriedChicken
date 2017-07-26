@@ -42,8 +42,8 @@
     <Compile Include="AzureTable.xaml.cs">
       <DependentUpon>AzureTable.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CatInformation.xaml.cs">
-      <DependentUpon>CatInformation.xaml</DependentUpon>
+    <Compile Include="FastFoodInformation.xaml.cs">
+      <DependentUpon>FastFoodInformation.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomVision.xaml.cs">
       <DependentUpon>CustomVision.xaml</DependentUpon>
@@ -114,7 +114,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CatInformation.xaml">
+    <EmbeddedResource Include="FastFoodInformation.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

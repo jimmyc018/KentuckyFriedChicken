@@ -10,12 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace KentuckyFriedChicken
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CatInformation : ContentPage
+    public partial class FastFoodInformation : ContentPage
     {
-        public CatInformation()
+        public FastFoodInformation()
         {
+
             InitializeComponent();
-            
         }
+
+  
     }
 }
