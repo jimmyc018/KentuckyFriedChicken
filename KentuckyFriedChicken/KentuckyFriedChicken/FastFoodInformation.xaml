@@ -2,9 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
        x:Class="KentuckyFriedChicken.FastFoodInformation" Title="FastFoodInformation">
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Label Text="Chicken Nugget" />
-        <Image Source= "images.jpg" />
-        <Label Text="'waterfront.jpg' is referenced in Xaml" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Fast Food Phone Number" VerticalOptions="Center" HorizontalOptions="Center" Font="Bold,20" />
+            <Image Source="images.jpg" />
+            <Label Text="McDonald Phone Number"  VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button Text="Phone Number: 092713540" BorderWidth="0" Clicked="click1" TextColor="#3398da" BackgroundColor="White"/>
+            <Label Text="KFC Phone Number"  VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button Text="Phone Number: 095762013" BorderWidth="0" Clicked="click2" TextColor="#3398da" BackgroundColor="White"/>
+            <Label Text="Carls Jr Phone Number" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button Text="Phone Number: 095282145" BorderWidth="0" Clicked="click3" TextColor="#3398da" BackgroundColor="White"/>
+            <Label Text="Wendy's Phone Number" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button Text="Phone Number: 092727715" BorderWidth="0" Clicked="click4" TextColor="#3398da" BackgroundColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
